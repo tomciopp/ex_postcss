@@ -11,6 +11,12 @@ defmodule ExPostcss.MixProject do
       elixir: "~> 1.12",
       deps: deps(),
       description: "Mix tasks for invoking postcss-cli",
+      docs: [
+        main: "ExPostcss",
+        source_url: @source_url,
+        source_ref: "v#{@version}",
+        extras: ["CHANGELOG.md"]
+      ],
       package: [
         links: %{
           "GitHub" => @source_url,
