@@ -149,13 +149,6 @@ We should ignore this directory in our `.gitconfig` file.
 > in the :only option for Plug.Static in your endpoint file at,
 > for instance `lib/my_app_web/endpoint.ex`.
 
-In development, we want to enable watch mode. So find the `watchers`
-configuration in your `config/dev.exs` and add:
-
-```elixir
-  postcss: {ExPostcss, :run, [:default, ~w(--watch)]}
-```
-
 Finally, back in your `mix.exs`, make sure you have an `assets.deploy`
 alias for deployments:
 
