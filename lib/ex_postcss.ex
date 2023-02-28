@@ -9,7 +9,7 @@ defmodule ExPostcss do
 
     opts = [
       cd: config[:cd] || File.cwd!(),
-      env: config[:env] || %{},
+      env: config[:env] || [{"FORCE_IS_TTY", "true"}],
       into: IO.stream(:stdio, :line),
       stderr_to_stdout: true
     ]
